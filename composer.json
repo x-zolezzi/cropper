@@ -4,5 +4,6 @@
   "homepage": "https://www.makeitcreative.fr",
   "require": {
     "php": ">=7.1"
-  }
+  },
+  "minimum-stability": "dev"
 }

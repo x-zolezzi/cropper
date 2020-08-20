@@ -355,6 +355,20 @@ if (!empty($_POST)) {
             });
             $(editor).append($el);
 
+            //Agrandissement de l'iamge
+            var $el = $('<button class="btn btn-primary btn-sm" style="position: absolute; right: 200px; top: 10px; z-index: 9999;">↔</button>').on('click', function() {
+                cropper.zoomTo(1);
+                var ratio_width = cropper.getCropBoxData().width / cropper.getCanvasData().naturalWidth
+                cropper.zoomTo(ratio_width);
+            });
+            $(editor).append($el);
+            var $el = $('<button class="btn btn-primary btn-sm" style="position: absolute; right: 200px; top: 50px; z-index: 9999;">↕</button>').on('click', function() {
+                cropper.zoomTo(1);
+                var ratio_height = cropper.getCropBoxData().height / cropper.getCanvasData().naturalHeight;
+                cropper.zoomTo(ratio_height);
+            });
+            $(editor).append($el);
+
             cropper = new Cropper(image, {
                 viewMode: 0,
                 dragMode: 'move',

@@ -280,20 +280,7 @@ if (!empty($_POST)) {
             $(editor).append($el);
 
             // Bouton d'alignement
-            var $el = $('<button class="btn btn-primary btn-sm" style="position: absolute; right: 130px; top: 10px; z-index: 9999;"></button>').on('click', function() {
-                cropper.moveTo(
-                    (cropper.getCropBoxData().left + (cropper.getCropBoxData().width - cropper.getCanvasData().width)),
-                    (cropper.getCropBoxData().top)
-                );
-            });
-            $(editor).append($el);
-            var $el = $('<button class="btn btn-primary btn-sm" style="position: absolute; right: 150px; top: 10px; z-index: 9999;"></button>').on('click', function() {
-                cropper.moveTo(
-                    (cropper.getCropBoxData().left + (cropper.getCropBoxData().width - cropper.getCanvasData().width) / 2),
-                    (cropper.getCropBoxData().top)
-                );
-            });
-            $(editor).append($el);
+            //Top Left
             var $el = $('<button class="btn btn-primary btn-sm" style="position: absolute; right: 170px; top: 10px; z-index: 9999;"></button>').on('click', function() {
                 cropper.moveTo(
                     (cropper.getCropBoxData().left),
@@ -301,21 +288,24 @@ if (!empty($_POST)) {
                 );
             });
             $(editor).append($el);
-
-            var $el = $('<button class="btn btn-primary btn-sm" style="position: absolute; right: 130px; top: 30px; z-index: 9999;"></button>').on('click', function() {
-                cropper.moveTo(
-                    (cropper.getCropBoxData().left + (cropper.getCropBoxData().width - cropper.getCanvasData().width)),
-                    (cropper.getCropBoxData().top + (cropper.getCropBoxData().height - cropper.getCanvasData().height) / 2)
-                );
-            });
-            $(editor).append($el);
-            var $el = $('<button class="btn btn-primary btn-sm" style="position: absolute; right: 150px; top: 30px; z-index: 9999;"></button>').on('click', function() {
+            //Top Center
+            var $el = $('<button class="btn btn-primary btn-sm" style="position: absolute; right: 150px; top: 10px; z-index: 9999;"></button>').on('click', function() {
                 cropper.moveTo(
                     (cropper.getCropBoxData().left + (cropper.getCropBoxData().width - cropper.getCanvasData().width) / 2),
-                    (cropper.getCropBoxData().top + (cropper.getCropBoxData().height - cropper.getCanvasData().height) / 2)
+                    (cropper.getCropBoxData().top)
                 );
             });
             $(editor).append($el);
+            //Top Right
+            var $el = $('<button class="btn btn-primary btn-sm" style="position: absolute; right: 130px; top: 10px; z-index: 9999;"></button>').on('click', function() {
+                cropper.moveTo(
+                    (cropper.getCropBoxData().left + (cropper.getCropBoxData().width - cropper.getCanvasData().width)),
+                    (cropper.getCropBoxData().top)
+                );
+            });
+            $(editor).append($el);
+
+            //Center Left
             var $el = $('<button class="btn btn-primary btn-sm" style="position: absolute; right: 170px; top: 30px; z-index: 9999;"></button>').on('click', function() {
                 cropper.moveTo(
                     (cropper.getCropBoxData().left),
@@ -323,14 +313,32 @@ if (!empty($_POST)) {
                 );
             });
             $(editor).append($el);
-
-            var $el = $('<button class="btn btn-primary btn-sm" style="position: absolute; right: 130px; top: 50px; z-index: 9999;"></button>').on('click', function() {
+            //Center Center
+            var $el = $('<button class="btn btn-primary btn-sm" style="position: absolute; right: 150px; top: 30px; z-index: 9999;"></button>').on('click', function() {
+                cropper.moveTo(
+                    (cropper.getCropBoxData().left + (cropper.getCropBoxData().width - cropper.getCanvasData().width) / 2),
+                    (cropper.getCropBoxData().top + (cropper.getCropBoxData().height - cropper.getCanvasData().height) / 2)
+                );
+            });
+            $(editor).append($el);
+            //Center Right
+            var $el = $('<button class="btn btn-primary btn-sm" style="position: absolute; right: 130px; top: 30px; z-index: 9999;"></button>').on('click', function() {
                 cropper.moveTo(
                     (cropper.getCropBoxData().left + (cropper.getCropBoxData().width - cropper.getCanvasData().width)),
+                    (cropper.getCropBoxData().top + (cropper.getCropBoxData().height - cropper.getCanvasData().height) / 2)
+                );
+            });
+            $(editor).append($el);
+
+            //Bottom Left
+            var $el = $('<button class="btn btn-primary btn-sm" style="position: absolute; right: 170px; top: 50px; z-index: 9999;"></button>').on('click', function() {
+                cropper.moveTo(
+                    (cropper.getCropBoxData().left),
                     (cropper.getCropBoxData().top + (cropper.getCropBoxData().height - cropper.getCanvasData().height))
                 );
             });
             $(editor).append($el);
+            //Bottom Center
             var $el = $('<button class="btn btn-primary btn-sm" style="position: absolute; right: 150px; top: 50px; z-index: 9999;"></button>').on('click', function() {
                 cropper.moveTo(
                     (cropper.getCropBoxData().left + (cropper.getCropBoxData().width - cropper.getCanvasData().width) / 2),
@@ -338,9 +346,10 @@ if (!empty($_POST)) {
                 );
             });
             $(editor).append($el);
-            var $el = $('<button class="btn btn-primary btn-sm" style="position: absolute; right: 170px; top: 50px; z-index: 9999;"></button>').on('click', function() {
+            //Bottom Right
+            var $el = $('<button class="btn btn-primary btn-sm" style="position: absolute; right: 130px; top: 50px; z-index: 9999;"></button>').on('click', function() {
                 cropper.moveTo(
-                    (cropper.getCropBoxData().left),
+                    (cropper.getCropBoxData().left + (cropper.getCropBoxData().width - cropper.getCanvasData().width)),
                     (cropper.getCropBoxData().top + (cropper.getCropBoxData().height - cropper.getCanvasData().height))
                 );
             });

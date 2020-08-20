@@ -1,0 +1,8 @@
+{
+  "name": "x-zolezzi/cropper",
+  "description": "Outil de redimensionnement d'image",
+  "homepage": "https://www.makeitcreative.fr",
+  "require": {
+    "php": ">=7.1"
+  }
+}

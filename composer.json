@@ -4,7 +4,8 @@
   "homepage": "https://www.makeitcreative.fr",
   "type": "cakephp-plugin",
   "require": {
-    "cakephp/core": "^4.0"
+    "cakephp/core": "^4.0",
+    "jbzoo/image": "^5.0"
   },
   "license": "MIT",
   "minimum-stability": "dev",

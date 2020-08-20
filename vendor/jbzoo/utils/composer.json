@@ -1,0 +1,78 @@
+{
+    "name"              : "jbzoo/utils",
+    "type"              : "library",
+    "description"       : "Collection of PHP functions, mini classes and snippets for everyday developer's routine life.",
+    "license"           : "MIT",
+    "keywords"          : [
+        "helpers", "helper", "utility", "utils", "collection", "environment", "image", "filesystem",
+        "array", "cli", "command line", "dates", "email", "env", "filter", "http", "url", "serialize",
+        "slugify", "string", "mbstring", "timer", "misc"
+    ],
+
+    "authors"           : [
+        {
+            "name"  : "Denis Smetannikov",
+            "email" : "admin@jbzoo.com",
+            "role"  : "lead"
+        },
+        {
+            "name"  : "Brandon Wamboldt",
+            "email" : "brandon.wamboldt@gmail.com"
+        },
+        {
+            "name"  : "Luís Nóbrega",
+            "email" : "luis.barros.nobrega@gmail.com"
+        }
+    ],
+
+    "require"           : {
+        "php"          : ">=7.2",
+        "ext-posix"    : "*",
+        "ext-mbstring" : "*",
+        "ext-gd"       : "*",
+        "ext-filter"   : "*",
+        "ext-dom"      : "*"
+    },
+
+    "require-dev"       : {
+        "jbzoo/toolbox-dev"         : "^2.4.0",
+        "jbzoo/data"                : "^4.0.1",
+        "symfony/process"           : "^4.4|^5.0",
+        "symfony/polyfill-mbstring" : "^1.12"
+    },
+
+    "suggest"           : {
+        "ext-mbstring"              : "Provides multibyte specific string functions",
+        "symfony/process"           : "For Cli::exec() method only",
+        "symfony/polyfill-mbstring" : "For UTF-8 if ext-mbstring disabled",
+        "jbzoo/data"                : ">=4.0",
+        "ext-intl"                  : "*"
+    },
+
+    "autoload"          : {
+        "files" : [
+            "src/defines.php",
+            "src/aliases.php"
+        ],
+        "psr-4" : {
+            "JBZoo\\Utils\\" : "src"
+        }
+    },
+
+    "minimum-stability" : "dev",
+    "prefer-stable"     : true,
+
+    "autoload-dev"      : {
+        "classmap" : ["tests"]
+    },
+
+    "config"            : {
+        "optimize-autoloader" : true
+    },
+
+    "extra"             : {
+        "branch-alias" : {
+            "dev-master" : "4.x-dev"
+        }
+    }
+}

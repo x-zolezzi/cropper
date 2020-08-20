@@ -1,0 +1,356 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "bacedcbc4683ef9236f5fa79bea47b08",
+    "packages": [
+        {
+            "name": "cakephp/core",
+            "version": "4.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cakephp/core.git",
+                "reference": "c7e88f1cd6dfe17065e71f1af305d415f155e97e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cakephp/core/zipball/c7e88f1cd6dfe17065e71f1af305d415f155e97e",
+                "reference": "c7e88f1cd6dfe17065e71f1af305d415f155e97e",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/utility": "^4.0",
+                "php": ">=7.2.0"
+            },
+            "suggest": {
+                "cakephp/cache": "To use Configure::store() and restore().",
+                "cakephp/event": "To use PluginApplicationInterface or plugin applications."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cake\\Core\\": "."
+                },
+                "files": [
+                    "functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "CakePHP Community",
+                    "homepage": "https://github.com/cakephp/core/graphs/contributors"
+                }
+            ],
+            "description": "CakePHP Framework Core classes",
+            "homepage": "https://cakephp.org",
+            "keywords": [
+                "cakephp",
+                "core",
+                "framework"
+            ],
+            "time": "2020-08-13T23:43:58+00:00"
+        },
+        {
+            "name": "cakephp/utility",
+            "version": "4.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cakephp/utility.git",
+                "reference": "c65a5a169077c561b6e850e6d0ee85d9a54b6f5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cakephp/utility/zipball/c65a5a169077c561b6e850e6d0ee85d9a54b6f5a",
+                "reference": "c65a5a169077c561b6e850e6d0ee85d9a54b6f5a",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/core": "^4.0",
+                "php": ">=7.2.0"
+            },
+            "suggest": {
+                "ext-intl": "To use Text::transliterate() or Text::slug()",
+                "lib-ICU": "To use Text::transliterate() or Text::slug()"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cake\\Utility\\": "."
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "CakePHP Community",
+                    "homepage": "https://github.com/cakephp/utility/graphs/contributors"
+                }
+            ],
+            "description": "CakePHP Utility classes such as Inflector, String, Hash, and Security",
+            "homepage": "https://cakephp.org",
+            "keywords": [
+                "cakephp",
+                "hash",
+                "inflector",
+                "security",
+                "string",
+                "utility"
+            ],
+            "time": "2020-08-12T08:25:29+00:00"
+        },
+        {
+            "name": "jbzoo/data",
+            "version": "4.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JBZoo/Data.git",
+                "reference": "e9320145035a406dc0ed978438e67e580287d8c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JBZoo/Data/zipball/e9320145035a406dc0ed978438e67e580287d8c5",
+                "reference": "e9320145035a406dc0ed978438e67e580287d8c5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "jbzoo/toolbox-dev": "^2.4.3",
+                "jbzoo/utils": "^4.2.1",
+                "symfony/yaml": "^4.4||^5.0",
+                "vimeo/psalm": "^3.14.1"
+            },
+            "suggest": {
+                "jbzoo/utils": ">=4.2.1",
+                "symfony/yaml": ">=4.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "JBZoo\\Data\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Smetannikov",
+                    "email": "admin@jbzoo.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "An extended version of the ArrayObject object for working with system settings or just for working with data arrays",
+            "keywords": [
+                "array",
+                "arrayobject",
+                "config",
+                "data",
+                "ini",
+                "json",
+                "params",
+                "yml"
+            ],
+            "time": "2020-08-18T10:16:45+00:00"
+        },
+        {
+            "name": "jbzoo/image",
+            "version": "5.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JBZoo/Image.git",
+                "reference": "9322e7cc482c290ea242ebb194ca95a5c5aa794e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JBZoo/Image/zipball/9322e7cc482c290ea242ebb194ca95a5c5aa794e",
+                "reference": "9322e7cc482c290ea242ebb194ca95a5c5aa794e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-exif": "*",
+                "ext-gd": "*",
+                "jbzoo/data": "^4.0.1",
+                "jbzoo/utils": "^4.2.1",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "jbzoo/toolbox-dev": "^2.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JBZoo\\Image\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Smetannikov",
+                    "email": "admin@jbzoo.com",
+                    "role": "lead"
+                },
+                {
+                    "name": "Cory LaViska",
+                    "homepage": "http://www.abeautifulsite.net/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Nazar Mokrynskyi",
+                    "email": "nazar@mokrynskyi.com",
+                    "homepage": "http://cleverstyle.org/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A PHP class that simplifies working with images",
+            "keywords": [
+                "crop",
+                "filters",
+                "gd",
+                "image",
+                "images",
+                "jbzoo",
+                "resize",
+                "thumbnail",
+                "watermark"
+            ],
+            "time": "2020-07-31T18:01:36+00:00"
+        },
+        {
+            "name": "jbzoo/utils",
+            "version": "4.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JBZoo/Utils.git",
+                "reference": "6b687fe0329d246af54173b941855253f7a7c253"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JBZoo/Utils/zipball/6b687fe0329d246af54173b941855253f7a7c253",
+                "reference": "6b687fe0329d246af54173b941855253f7a7c253",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-filter": "*",
+                "ext-gd": "*",
+                "ext-mbstring": "*",
+                "ext-posix": "*",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "jbzoo/data": "^4.0.1",
+                "jbzoo/toolbox-dev": "^2.4.0",
+                "symfony/polyfill-mbstring": "^1.12",
+                "symfony/process": "^4.4|^5.0"
+            },
+            "suggest": {
+                "ext-intl": "*",
+                "ext-mbstring": "Provides multibyte specific string functions",
+                "jbzoo/data": ">=4.0",
+                "symfony/polyfill-mbstring": "For UTF-8 if ext-mbstring disabled",
+                "symfony/process": "For Cli::exec() method only"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/defines.php",
+                    "src/aliases.php"
+                ],
+                "psr-4": {
+                    "JBZoo\\Utils\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Smetannikov",
+                    "email": "admin@jbzoo.com",
+                    "role": "lead"
+                },
+                {
+                    "name": "Brandon Wamboldt",
+                    "email": "brandon.wamboldt@gmail.com"
+                },
+                {
+                    "name": "Luís Nóbrega",
+                    "email": "luis.barros.nobrega@gmail.com"
+                }
+            ],
+            "description": "Collection of PHP functions, mini classes and snippets for everyday developer's routine life.",
+            "keywords": [
+                "array",
+                "cli",
+                "collection",
+                "command line",
+                "dates",
+                "email",
+                "env",
+                "environment",
+                "filesystem",
+                "filter",
+                "helper",
+                "helpers",
+                "http",
+                "image",
+                "mbstring",
+                "misc",
+                "serialize",
+                "slugify",
+                "string",
+                "timer",
+                "url",
+                "utility",
+                "utils"
+            ],
+            "time": "2020-07-31T13:27:20+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

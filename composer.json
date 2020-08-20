@@ -2,8 +2,11 @@
   "name": "x-zolezzi/cropper",
   "description": "Outil de redimensionnement d'image",
   "homepage": "https://www.makeitcreative.fr",
+  "type": "cakephp-plugin",
   "require": {
-    "php": ">=7.1"
+    "cakephp/core": "^4.0"
   },
-  "minimum-stability": "stable"
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
